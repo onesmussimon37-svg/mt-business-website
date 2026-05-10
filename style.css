@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:black;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#00bfff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+}
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085')
+    center/cover;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:60px;
+}
+
+.hero-content p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#00bfff;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+section{
+    padding:80px 50px;
+    text-align:center;
+}
+
+.service-container,
+.project-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.box,
+.project-card{
+    background:white;
+    padding:30px;
+    width:300px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.box i{
+    font-size:40px;
+    color:#00bfff;
+    margin-bottom:15px;
+}
+
+.contact form{
+    max-width:500px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact button{
+    padding:12px 25px;
+    background:#00bfff;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.socials{
+    margin-top:20px;
+}
+
+.socials a{
+    color:black;
+    font-size:25px;
+    margin:0 10px;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:15px;
+    }
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+}.contact-info{
+    margin-top:20px;
+}
+
+.contact-info p{
+    font-size:18px;
+    margin:10px 0;
+}
+
+.contact-info i{
+    color:#00bfff;
+    margin-right:10px;
+}#darkModeBtn{
+    padding:10px 15px;
+    border:none;
+    background:#00bfff;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+body.dark-mode{
+    background:#111;
+    color:white;
+}
+
+body.dark-mode header,
+body.dark-mode footer{
+    background:#000;
+}
+
+body.dark-mode .box,
+body.dark-mode .project-card{
+    background:#222;
+    color:white;
+}
+
+body.dark-mode .contact input,
+body.dark-mode .contact textarea{
+    background:#222;
+    color:white;
+    border:1px solid #555;
+}.socials a{
+    color:black;
+    font-size:25px;
+    margin:0 10px;
+    transition:0.3s;
+}
+
+.socials a:hover{
+    color:#00bfff;
+}
